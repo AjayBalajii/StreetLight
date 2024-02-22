@@ -7,6 +7,7 @@ const Readline = require('@serialport/parser-readline');
 
 // Set up serial port communication with Arduino over Bluetooth
 const portName = '/dev/cu.usbserial-10'; // Change this to match your Arduino's serial port
+//const portName = '/dev/cu.Bluetooth-Incoming-Port';
 const serialPort = new SerialPort.SerialPort({ baudRate: 9600,
 path: portName});
 const parser = new Readline.ReadlineParser("\n");
