@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arduino Bluetooth Output</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .heading {
+      font-size: 30px;
+      text-decoration: double;
+      text-align: center;
+      justify-content: center;
+     
+    }
+
+    .header {
+      background-color: #c2c2c2;
+      color: #003874;
+      margin: 0%;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      align-items: center;
+      text-align: center;
+      /* margin-left: 400%; */
+    }
+
+    .homepage-background {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('homepage.avif');
+      /* Replace 'background.jpg' with your image file */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 90vh;
+      display: flex;
+      background-color: black;
+      opacity: 0.6;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 80%;
+      margin: 1px auto 1px 20px;
+    }
+
+    .navbar {
+      background-color: #003874;
+      color: #fff;
+      padding: 20px 0;
+      
+    }
+
+    .navbar h1.logo {
+      margin: 0;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-right: 20px;
+    }
+
+    .nav-links li:last-child {
+      margin-right: 0;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .burger {
+      display: none;
+      cursor: pointer;
+    }
+
+    .line1,
+    .line2,
+    .line3 {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px;
+    }
+
+    .content{
+        color: #5b5b5b;
+       margin-left: 20%;
+       margin-right: 20%;
+    }
+    .footer{
+        background-color: #003874;
+    }
+
+    @media screen and (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .burger {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--Header-->
+  <div class="header">
+    <h3 style="float: right;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minnagam <span  style="margin-top: 50px;"><img src="time-icon.png" height="40px" width="40px"/></span>94987 94987</h3>
+
+    <table>
+      <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="logo" src="Logo.png" /></td>
+        <td>
+          <h1 class="heading">&nbsp;TAMIL NADU RURAL STREET LIGHTS CENTRALIZED
+            MONITORING &nbsp;&nbsp; (TNRSLCM)</h1>
+        </td>
+       
+
+      </tr>
+    </table>
+    <div style="margin-left: 10%; justify-content: right;align-items: center;">
+
+    </div>
+
+  </div>
+  <!---Navigation Bar-->
+  <nav class="navbar">
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+    <div>
+    </div>
+  </nav>
+<!--Content-->
+<div class="about">
+    <h1 style="text-align:center; color: #003874;">About Us</h1>
+    
+    <p class="content">Tamil Nadu Electricity Board (TNEB) was formed on July 1, 1957 under section 54 of the Electricity (Supply) Act 1948 in the State of Tamil Nadu as a vertically integrated utility responsible for power generation, transmission and distribution. The electricity network has since been extended to all villages and towns throughout the State. As per the provisions under the section 131 of the Electricity Act,2003 TNEB was restructured on 1.11.2010 into TNEB Limited; Tamil Nadu Generation and Distribution Corporation Limited (TANGEDCO); and Tamil Nadu Transmission Corporation Limited (TANTRANSCO).</p>
+    <br/><br/>
+    <h1 style="text-align:center; color: #003874;">History</h1>
+    <h3 class="content">Historical Background of TNEB
+    </h3>
+    <p class="content">Electricity generation in Tamil Nadu until about 1908 was confined to a few tiny plants in Tea Estates run on water power and to a small hydro electric station at Kattery near Coonoor. The Government Electricity department was created in 1927. The Pykara Hydro electric Power Station was constructed by Sir John G. Henry Howard , a British Engineer and the first Chief Electrical Engineer of the then Composite Madras State Electricity Department and commissioned in 1933 with an original installed capacity of 70 MW. The Tamil Nadu Electricity Board was constituted with effect from 1st July 1957 under the Electricity Supply Act 1948 and came to be known as “The Madras State Electricity Board” with Padma Shri V.P. Appadurai appointed as Chief Engineer (Electricity).
+
+        The first thermal power plant was commissioned during 1971 at Ennore, Chennai with its first unit of 60 MW capacity. Naphtha based gas station of 10 MW capacity was commissioned at Narimanam during 1991-92.TNEB simultaneously ventured into wind generation and 120 units with a total capacity of 19.355 MW was commissioned in the period 1986-93. In 1992, the power sector was thrown open for private participation and the first independent power project was established by GMR Vasavi at Basin Bridge, Chennai.</p>
+        <br/><br/>
+        <h1 style="text-align:center; color: #003874;">Tamil Nadu at a Glance
+        </h1>
+        <div >
+            <div class="square">
+                <img src="map.png" height="400px" width="400px" style="display: flex;flex-wrap: wrap;float: left;margin-left: 20%;"/>
+
+            </div>
+
+        <p class="content"> Tamil Nadu is situated at the south eastern end of the Indian peninsula , between Latitude 8° 5' N and 13° 35' N and between Longitudes 76° 15' E and 80° 20'E.
+
+        It is bordered on the north by the states of Andhra Pradesh and Karnataka and on the west by the state of Kerala. Kanyakumari, the southernmost tip of this land is the meeting point of the Bay of Bengal, the Arabian Sea and the Indian Ocean.
+        
+        Tamil Nadu has a tropical climate with only slight seasonal variations. Temperature and humidity remain relatively high throughout the year. Tamil Nadu gets its rainfall from the South West Monsoon(June to September) and the North East Monsoon (October to December). The normal annual rainfall is 911.6 mm. The temperature in the plains varies between 38° C and 20° C.
+        
+        Tamil is the official language of this state. Thirukkural, a masterpiece of Tamil literature dates back to the period before 500 BC. The culture of Tamil Nadu is a unique blend of the ancient and the modern, where dance, drama and music are an integral part of everyday life. Tamil Nadu is a land of temples. The temples are of a distinct style which are famous for their towering gopurams.
+        
+        Tamil Nadu has a long eastern coastline stretching for nearly 1000 kms. dotted with enchanting beaches with Bay of Bengal in the east. For the tourist, Tamil Nadu has much to offer – from the majestic hills of the Western Ghats with its wide variety of flora and fauna, to the magnificient beaches on the Coromandel Coast.
+        
+        Tamil Nadu is one of the most industrialised states in India with a high Human Development index. Chennai (formerly known as Madras), the capital city of Tamil Nadu, is the gateway of South India with an international airport, sea ports and rail and road network connectivity. Coimbatore, Madurai and Tiruchirappalli, Salem and Tirunelveli are some of the other major towns in the state. The state has large number of good educational institutions and is one of the leaders in the field of Science and Technology and particularly in Information Technology.
+        
+        The investment scenario in the State is very buoyant due to the transparent and proactive approach of the Government. The State has emerged as the front-runner in attracting new investments in Manufacturing sector. Within the manufacturing sector, sun-rise industries like Electronic Hardware, Automobiles and components, apart from traditionally strong industries like Textiles & Garments, Leather products, etc. are the prime-movers of the manufacturing sector in Tamil Nadu. The vision of the Government is to make Tamil Nadu as the hub for Global Manufacturing.
+        
+        Tamil Nadu has been amongst the top three States in terms of ICT investments and production. It has emerged as a hub for software, hardware and R&D. The number of Indian and Multinational organizations having presence in Tamil Nadu is a testimony to this.
+        
+        ICT production in Tamil Nadu touched a high of US $ 5.7 billion in 2006-07 and is expected to rise even further in the coming few years. Tamil Nadu now wishes to leverage the unique advantages it possesses and enhance its presence in the ICT sector.</p>   
+        </div>
+    </div>
+</div><br/><br/>
+<!--Footer-->
+<div class="footer">
+<br/><br/>
+</div>
+
+  <script>
+   
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>

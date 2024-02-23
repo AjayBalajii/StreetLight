@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arduino Bluetooth Output</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+
+    }
+
+    .heading {
+      font-size: 30px;
+      text-decoration: double;
+      text-align: center;
+      justify-content: center;
+     
+    }
+
+    .header {
+      background-color: #c2c2c2;
+      color: #003874;
+      margin: 0%;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      align-items: center;
+      text-align: center;
+      /* margin-left: 400%; */
+    }
+
+    .homepage-background {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('homepage.avif');
+      /* Replace 'background.jpg' with your image file */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 90vh;
+      display: flex;
+      background-color: black;
+      opacity: 0.6;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 80%;
+      margin: 1px auto 1px 20px;
+    }
+
+    .navbar {
+      background-color: #003874;
+      color: #fff;
+      padding: 20px 0;
+      
+    }
+
+    .navbar h1.logo {
+      margin: 0;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-right: 20px;
+    }
+
+    .nav-links li:last-child {
+      margin-right: 0;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .burger {
+      display: none;
+      cursor: pointer;
+    }
+
+    .line1,
+    .line2,
+    .line3 {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px;
+    }
+
+    .form-container {
+      width: 70%;
+
+      max-width: 400px;
+
+      margin: 50px auto;
+      background-color: #ffffffc9;
+      padding: 20px;
+      color: #003874;
+      opacity: 0.9;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group select,
+    .form-group input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: #003874;
+      box-sizing: border-box;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      background-color: #003874;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .footer{
+        background-color: #003874;
+    }
+
+    @media screen and (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .burger {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--Header-->
+  <div class="header">
+    <h3 style="float: right;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minnagam <span  style="margin-top: 50px;"><img src="time-icon.png" height="40px" width="40px"/></span>94987 94987</h3>
+
+    <table>
+      <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="logo" src="Logo.png" /></td>
+        <td>
+          <h1 class="heading">&nbsp;TAMIL NADU RURAL STREET LIGHTS CENTRALIZED
+            MONITORING &nbsp;&nbsp; (TNRSLCM)</h1>
+        </td>
+        <td>
+
+        </td>
+
+      </tr>
+    </table>
+
+  </div>
+  <!---Navigation Bar-->
+  <nav class="navbar">
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+    <div>
+    </div>
+  </nav>
+
+  <!---Home page Background Picture and other items-->
+  <div class="homepage-background">
+    <div class="form-container">
+      <h2>Location Details</h2>
+      <form>
+        <div class="form-group">
+          <label for="category">District:</label>
+          <select id="category" name="category" required>
+            <option value="">Select District</option>
+            <option value="Thiruvarur">Thiruvarur</option>
+            <option value="Thanjavur">Thanjavur</option>
+            <option value="Thirichirapalli">Thirichirapalli</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Town:</label>
+          <input type="text" id="message" name="message" />
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!--Footer-->
+<div class="footer">
+  <br/><br/>
+  </div>
+
+  <div id="output"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+
+    socket.on('arduinoData', function (data) {
+      document.getElementById('output').innerText = data;
+    });
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>
